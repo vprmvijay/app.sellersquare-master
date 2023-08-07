@@ -1,0 +1,12 @@
+.dash{
+    width: 1178px;
+    height: 600px;
+    border-radius: 10px;
+    background: #F5F5F5;
+    margin: 15px 10px 10px 15px;
+    overflow: auto ;
+    
+}
+.servicemanager{
+    display:flex;
+}

@@ -1,0 +1,92 @@
+/* Add this CSS in your stylesheet or in a style block within the component */
+.color-dp{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+     flex-wrap: wrap;
+}
+.color-dpx{
+    display: flex;
+    text-align: center;
+    margin-left: 20px;
+   
+}
+.color-checkbox {
+  display: none;
+}
+
+.color-square {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.color-square.checked {
+  border-color: #000;
+}
+
+/* Add custom styles for each color */
+.color-square.black {
+  background-color: #000;
+}
+
+.color-square.white {
+  background-color: #fff;
+}
+
+.color-square.red {
+  background-color: #ff0000;
+}
+
+.color-square.blue {
+  background-color: #0000ff;
+}
+
+.color-square.green {
+  background-color: #00ff00;
+}
+
+.color-square.yellow {
+  background-color: #ffff00;
+}
+
+.color-square.pink {
+  background-color: #ff69b4;
+}
+
+.color-square.purple {
+  background-color: #800080;
+}
+
+.color-square.orange {
+  background-color: #ffa500;
+}
+
+.color-square.brown {
+  background-color: #a52a2a;
+}
+
+.color-square.gold {
+  background-color: #ffd700;
+}
+
+.color-square.silver {
+  background-color: #c0c0c0;
+}
+
+.color-square.grey {
+  background-color: #808080;
+}
+
+.color-square.multicoloured {
+  background: linear-gradient(to right, red, blue, green, yellow);
+}
+
+.color-square.transparent {
+  background-color: transparent;
+}

@@ -1,0 +1,52 @@
+{
+  "services": [
+    {
+      "icon": "../../services-icons/1.png",
+      "iconName": "SERVICE MANAGER",
+      "index": 1,
+      "link": "service_manager"
+    },
+    {
+      "icon": "../../services-icons/2.png",
+      "iconName": "CUSTOMER MANAGER",
+      "index": 2,
+      "link": "customer_manager"
+    },
+    {
+      "icon": "../../services-icons/3.png",
+      "iconName": "PRICING MANAGER",
+      "index": 3,
+      "link": "pricing_manager"
+    },
+    {
+      "icon": "../../services-icons/4.png",
+      "iconName": "PROJECT MANAGER",
+      "index": 4,
+      "link": "project_manager"
+    },
+    {
+      "icon": "../../services-icons/5.png",
+      "iconName": "PROPS MANAGER",
+      "index": 5,
+      "link": "props_manager"
+    },
+    {
+      "icon": "../../services-icons/6.png",
+      "iconName": "INVENTORY MANAGER",
+      "index": 6,
+      "link": "inventory_manager"
+    },
+    {
+      "icon": "../../services-icons/7.png",
+      "iconName": "ASSET MANAGER",
+      "index": 7,
+      "link": "asset_manager"
+    },
+    {
+      "icon": "../../services-icons/8.png",
+      "iconName": "MODEL MANAGER",
+      "index": 8,
+      "link": "model_manager"
+    }
+  ]
+}

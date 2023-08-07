@@ -1,0 +1,18 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 243px);
+  grid-template-rows: repeat(2, 243px);
+  gap: 100px;
+  width: 100vw;
+  height: 625px;
+  justify-content: center;
+  align-content: center;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 243px;
+  height: 243px;
+}
