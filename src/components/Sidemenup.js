@@ -1,10 +1,29 @@
+import React, { useState, useEffect } from "react";
 import "./sidemenustyles.css";
 import { Link } from "react-router-dom";
 
 export default function Sidemenu() {
+  const [propsCheckbox, setPropsCheckbox] = useState(
+    JSON.parse(localStorage.getItem("propsCheckbox")) || false
+  );
+  const [backdropsCheckbox, setBackdropsCheckbox] = useState(
+    JSON.parse(localStorage.getItem("backdropsCheckbox")) || false
+  );
+
+  useEffect(() => {
+    localStorage.setItem("propsCheckbox", JSON.stringify(propsCheckbox));
+  }, [propsCheckbox]);
+
+  useEffect(() => {
+    localStorage.setItem(
+      "backdropsCheckbox",
+      JSON.stringify(backdropsCheckbox)
+    );
+  }, [backdropsCheckbox]);
+
   return (
-    <div class="floating-element">
-      <div class="child-top child-top-content">
+    <div className="floating-element">
+      <div className="child-top child-top-content">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="22"
@@ -25,42 +44,64 @@ export default function Sidemenu() {
         <p>Entry</p>
       </div>
       <Link to="/props_manager">
-        <div class="child-div create">
+        <div
+          className={`child-div create ${
+            propsCheckbox ? "selected" : ""
+          }`}
+        >
           <label>
-            <input type="checkbox" className="props-checkbox" />
+            <input
+              type="checkbox"
+              className="props-checkbox"
+              checked={propsCheckbox}
+              onChange={(e) => setPropsCheckbox(e.target.checked)}
+            />
             Props
           </label>
         </div>
       </Link>
 
       <Link to="/props_manager/backdrops">
-        <div class="child-div create">
+        <div
+          className={`child-div create ${
+            backdropsCheckbox ? "selected" : ""
+          }`}
+        >
           <label>
-            <input type="checkbox" className="backdrops-checkbox" />
+            <input
+              type="checkbox"
+              className="backdrops-checkbox"
+              checked={backdropsCheckbox}
+              onChange={(e) => setBackdropsCheckbox(e.target.checked)}
+            />
             Backdrops
           </label>
         </div>
       </Link>
       <div class="child-div view">
-        <p>View</p>
-      </div>
-      <Link to="/props_manager/view">
-        <div class="child-div create">
-          <label>
-            <input type="checkbox" className="props-checkbox" />
-            Props
-          </label>
-        </div>
-      </Link>
+  <p>View</p>
+</div>
+<Link to="/props_manager/view">
+  <div class="child-div create">
+    <label>
+      <input type="checkbox" className="props-checkbox" />
+      Props
+    </label>
+  </div>
+</Link>
 
-      <Link to="/props_manager/backdrops">
-        <div class="child-div create">
-          <label>
-            <input type="checkbox" className="backdrops-checkbox" />
-            Backdrops
-          </label>
-        </div>
-      </Link>
-    </div>
+<Link to="/props_manager/backdrops">
+  <div class="child-div create">
+    <label>
+      <input type="checkbox" className="backdrops-checkbox" />
+      Backdrops
+    </label>
+  </div>
+</Link>
+</div>
+    
   );
 }
+
+
+

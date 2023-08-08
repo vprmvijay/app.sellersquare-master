@@ -125,7 +125,7 @@ const Dashboardp = () => {
  
 
   return (
-    <div>
+    <div className='dashboardprop'>
       <form onSubmit={handleSubmit}>
         <label htmlFor="propName">Prop Name:</label>
         <input

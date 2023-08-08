@@ -24,12 +24,14 @@ line-height: normal;
 }
 .header {
     display: flex;
-    height: 64px;
+    height: 5vw;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; /* Adjust the padding as needed */
+    padding: 0 2vw; /* Adjust the padding as needed */
     border-bottom: 1px solid black;
-    
+    position: fixed;
+    width: 96vw;
+    background-color: white;
   }
   
   .Group-left, .Group-right {
